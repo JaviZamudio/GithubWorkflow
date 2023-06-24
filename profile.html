@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <h1>Perfil</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="datos">
+                <h2>Datos</h2>
+                <p>Nombre: Juan</p>
+                <p>Apellido: Perez</p>
+                <p>Correo: juan@gmail.com</p>
+                <p>Telefono: 123456789</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .datos {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .datos p {
+            margin: 0;
+        }
+
+        .datos p:nth-child(odd) {
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</body>
+
+</html>
